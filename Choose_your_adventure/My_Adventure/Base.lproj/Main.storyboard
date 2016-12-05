@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kzB-IU-BMa">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="g4A-e1-Ca7">
+            <objects>
+                <navigationController id="kzB-IU-BMa" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7WR-LF-4dr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="c1y-2h-V1d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Bw-5E-qB8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="-2364"/>
+        </scene>
+        <!--Welcome!-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomePage" id="BYZ-38-t0r" customClass="HomePage" customModule="My_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTh-oR-uVH">
+                                <frame key="frameInset" minX="8" minY="530" width="161" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <state key="normal" title=" Enchanted Valley">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="h23-eF-cLB" kind="push" id="lSj-bn-wGI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYJ-iy-IHS">
+                                <frame key="frameInset" minX="225" minY="530" width="112" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <state key="normal" title="Fiery Waters">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2ap-ky-yKf" kind="push" id="byz-9N-G1Y"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X1b-ks-LXM">
+                                <frame key="frameInset" minX="38" minY="41" width="299" height="516"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">
+
+*You walk into a beautiful green meadow, its lush emerald grass dotted with light blue flowers. Suddenly, you hear a small popping sound, and looking up, see two young women standing before you.*
+"Welcome to the transition point between two magical worlds. My name is Queen Anastasia, ruler of Fiery Waters." says the first, bowing courteously and gesturing towards a portal to her left. She has startlingly red hair and eyes as green as the grass around you.
+
+"And I am Queen Kiara, ruler of Enchanted Valley." the other says, brushing a strand of long golden hair from in front of her periwinkle blue eyes and pointing to a portal on her right. "The two worlds are places full of magic, and hopefully not much evil will fall upon either of them while you stay in the one you choose. We are both very powerful sorceresses ourselves, and most evil has little chance against us. We do our best to protect our realms and all those who dwell within them, so you will be quite safe." She explains, smiling.
+
+"It is your choice which one you choose to live in, and remember that you are always free to visit either land." Anastasia says.
+
+*The two sorceresses bow to you, to each other and walk through their own portals*
+
+NOW CHOOSE WHICH LAND YOU WOULD LIKE TO LIVE IN! ENJOY YOUR NEW LIFE!</mutableString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.71316915041987394" green="0.72855129067578717" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome!" id="COs-V4-ETW"/>
+                    <connections>
+                        <outlet property="textView" destination="X1b-ks-LXM" id="8o6-VP-Vww"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="192.80000000000001" y="-1634.0329835082459"/>
+        </scene>
+        <!--First floor-->
+        <scene sceneID="8U6-Y8-GcU">
+            <objects>
+                <viewController id="b82-te-2ZK" customClass="Option" customModule="My_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GhU-gD-mfh"/>
+                        <viewControllerLayoutGuide type="bottom" id="LRS-h7-lJj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BVe-8T-5Wg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqU-u1-koH">
+                                <frame key="frameInset" minX="16" minY="446" width="181" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Ballroom">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VcO-zY-y2v" kind="push" id="w4b-dq-NTY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zE6-3U-m8N">
+                                <frame key="frameInset" minX="170" minY="446" width="189" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Banquet Hall">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VcO-zY-y2v" kind="push" id="TJ9-BG-sE2"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="These are two main rooms on the first floor of Echanted Valley." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="14f-ep-XKl">
+                                <frame key="frameInset" minX="67" minY="167" width="240" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.53453417479999998" green="1" blue="0.54025668660000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="First floor" id="1vh-MJ-HIu"/>
+                    <connections>
+                        <outlet property="textView" destination="14f-ep-XKl" id="ZFH-oo-vF5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TI2-zv-62V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-954.39999999999998" y="-636.4317841079461"/>
+        </scene>
+        <!--Second floor-->
+        <scene sceneID="fgv-5q-A2L">
+            <objects>
+                <viewController id="QU4-2X-63d" customClass="Option" customModule="My_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FgR-HV-lWB"/>
+                        <viewControllerLayoutGuide type="bottom" id="HI9-jy-BqF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s6b-nG-DlD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nca-e6-uwh">
+                                <frame key="frameInset" minX="16" minY="426" width="131" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Bedroom">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VcO-zY-y2v" kind="push" id="JTC-Rz-6BK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLs-Np-cdi">
+                                <frame key="frameInset" minX="150" minY="434" width="209" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Common Room">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VcO-zY-y2v" kind="push" id="Lre-QD-zXX"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="These are two main rooms on the second floor of Enchanted Valley." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="o7K-8a-3kf">
+                                <frame key="frameInset" minX="49" minY="102" width="226" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.53453417479999998" green="1" blue="0.54025668660000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second floor" id="xbc-mx-jox"/>
+                    <connections>
+                        <outlet property="textView" destination="o7K-8a-3kf" id="cQX-d2-vDc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jhF-Dy-JJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-127.2" y="-636.4317841079461"/>
+        </scene>
+        <!--Option-->
+        <scene sceneID="4FK-h2-jkK">
+            <objects>
+                <viewController id="VcO-zY-y2v" customClass="Option" customModule="My_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="era-Lf-fbA"/>
+                        <viewControllerLayoutGuide type="bottom" id="vUc-3G-meC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ekA-nN-wt5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Welcome to Magic Room!  The only room in Enchanted Valley!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xyq-Ky-1r9">
+                                <frame key="frameInset" minX="67" minY="185" width="240" height="297"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.65629274179999997" blue="0.84257627079999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Zg-of-iti"/>
+                    <connections>
+                        <outlet property="textView" destination="Xyq-Ky-1r9" id="yUx-4F-puC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6bo-yO-273" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-490.39999999999998" y="49.925037481259373"/>
+        </scene>
+        <!--First Floor-->
+        <scene sceneID="6ZF-og-WNJ">
+            <objects>
+                <viewController id="FqZ-OZ-ni4" customClass="Option" customModule="My_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VtI-TR-yNJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="BNb-XM-TVs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nHK-bM-EYR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="There is only one room on the first floor of Fiery Waters." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EdJ-7t-5Jl">
+                                <frame key="frameInset" minX="67" minY="102" width="255" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOl-lQ-IZO">
+                                <frame key="frameInset" minX="107" minY="577" width="160" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Ballroom">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xPU-RE-pSs" kind="push" id="0Ty-Oa-1xZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56008803819999997" green="0.9132698253" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="First Floor" id="x5d-mD-xXG"/>
+                    <connections>
+                        <outlet property="textView" destination="EdJ-7t-5Jl" id="PCX-ep-kmz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Fw-d7-faf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.79999999999995" y="-826.23688155922048"/>
+        </scene>
+        <!--Second Floor-->
+        <scene sceneID="lm8-ZF-RDD">
+            <objects>
+                <viewController id="LbN-as-SDv" customClass="Option" customModule="My_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZDc-Sk-jQB"/>
+                        <viewControllerLayoutGuide type="bottom" id="hKK-GZ-gdv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aQP-pI-olH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="There is only one room on the second floor of Fiery Waters." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gJ1-or-ihr">
+                                <frame key="frameInset" minX="67" minY="103" width="257" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRs-oL-yKd">
+                                <frame key="frameInset" minX="102" minY="510" width="171" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Dining Hall">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xPU-RE-pSs" kind="push" id="uD1-YQ-Qwj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56008803819999997" green="0.9132698253" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second Floor" id="GcC-yB-bpv"/>
+                    <connections>
+                        <outlet property="textView" destination="gJ1-or-ihr" id="Mfr-Ck-Gs6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5E-Kl-Q98" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1799" y="-826"/>
+        </scene>
+        <!--Option-->
+        <scene sceneID="jW1-MH-0Bl">
+            <objects>
+                <viewController id="xPU-RE-pSs" customClass="Option" customModule="My_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p8C-Ba-v6e"/>
+                        <viewControllerLayoutGuide type="bottom" id="gVq-ft-KrY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gKN-by-SUB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="And this room is magical!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0QX-en-urS">
+                                <frame key="frameInset" minX="67" minY="224" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76214994339999997" green="0.6482999518" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.76214994335028818" green="0.64829995179469468" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wv9-mq-56b"/>
+                    <connections>
+                        <outlet property="textView" destination="0QX-en-urS" id="ktL-pq-k0a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Xl-2J-HjZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1334" y="-139"/>
+        </scene>
+        <!--Enchanted Valley-->
+        <scene sceneID="YrR-xP-sEk">
+            <objects>
+                <viewController storyboardIdentifier="Option_A_1" id="h23-eF-cLB" customClass="Option" customModule="My_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c4t-He-hIx"/>
+                        <viewControllerLayoutGuide type="bottom" id="xjj-Za-i8J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zsu-dt-g4s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="S2M-J8-z29">
+                                <frame key="frameInset" minX="41" minY="118" width="292" height="294"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">*You go right and walk through the portal after Kiara. Before you, there is a huge manor with magnificent turrets and towers. You walk up to the door. There is a small brass plate that reads Moonshine Manor. You look around, and to your left see lucious green fields and paths leading to places that you'd know you wuld love to explore. After taking in the Valley, you enter the Manor and walk to the administration desk...*</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQ4-sy-7Rq">
+                                <frame key="frameInset" minX="16" minY="461" width="146" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="First floor">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="b82-te-2ZK" kind="push" id="IAq-6Q-fwv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuT-Xc-Vgk">
+                                <frame key="frameInset" minX="181" minY="460" width="178" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Second floor">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QU4-2X-63d" kind="push" id="GgN-J8-AfG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.53453417479241816" green="1" blue="0.54025668656608417" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Enchanted Valley" id="G8P-6G-TCy"/>
+                    <connections>
+                        <outlet property="textView" destination="S2M-J8-z29" id="lHo-mR-ZEq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ltf-8n-XDv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-527" y="-1311"/>
+        </scene>
+        <!--Fiery Waters-->
+        <scene sceneID="Mj7-FX-buv">
+            <objects>
+                <viewController storyboardIdentifier="Option_B_1" id="2ap-ky-yKf" customClass="Option" customModule="My_Adventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h98-iY-LAU"/>
+                        <viewControllerLayoutGuide type="bottom" id="bPf-iT-9zG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BUt-gP-H9b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpl-yM-P6O">
+                                <frame key="frameInset" minX="191" minY="446" width="168" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Second floor">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LbN-as-SDv" kind="push" id="tRY-5r-MYR"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZtJ-p7-ENv">
+                                <frame key="frameInset" minX="41" minY="118" width="292" height="287"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">*you follow Anastasia through the portal to the left. before you, you see a dazzling red moat surrounding a huge castle. A drawbridge lowers in front of you. You step upon it and walk to the door. You see a brass knocker in the shape of a star and a silver plate saying Quiet Storm Castle. You enter and walk to the entrance hall. While you wait for someone to adress you, you glance out the window, and see mountains rising out of the horizon, and lakes sparkling in the distance, not to mention the sound of a rushing waterfall. A path leads to rainforests in the distance.* A voice speaks. " excuse me but would you like to register?" you turn around ........</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zc2-Bf-tge">
+                                <frame key="frameInset" minX="16" minY="454" width="119" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="First floor">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FqZ-OZ-ni4" kind="push" id="48L-yB-G5y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56008803820343722" green="0.91326982533759837" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Fiery Waters" id="XsL-Lj-jUD"/>
+                    <connections>
+                        <outlet property="textView" destination="ZtJ-p7-ENv" id="W0O-Jw-URv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="We4-UH-M0e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1118" y="-1525"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="0Ty-Oa-1xZ"/>
+        <segue reference="w4b-dq-NTY"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.1222339266" green="1" blue="0.84840285729999998" alpha="1" colorSpace="calibratedRGB"/>
+</document>
